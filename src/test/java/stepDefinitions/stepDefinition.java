@@ -21,9 +21,9 @@ public class stepDefinition extends Utils {
 
 	TestDataBuild data =new TestDataBuild();
 	RequestSpecification res;
- Response response;
-  static String place_id;
-  ResponseSpecification resspec;
+    Response response;
+    static String place_id;
+    ResponseSpecification resspec;
 	
 	@Given("Add Place Payload with {string}  {string} {string}")
 	public void add_Place_Payload_with(String name, String language, String address) throws IOException {
@@ -31,6 +31,9 @@ public class stepDefinition extends Utils {
 		    
 		 res = given().spec(requestSpecification())
 		.body(data.addPlacePayload(name, language, address));
+		 
+		 System.out.println("new1");
+		 System.out.println("new2");
 			 
 		}
 
