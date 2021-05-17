@@ -31,7 +31,9 @@ public class stepDefinition extends Utils {
 		    
 		 res = given().spec(requestSpecification())
 		.body(data.addPlacePayload(name, language, address));
-			 
+			
+		 
+		 
 		}
 
 
@@ -74,7 +76,10 @@ public class stepDefinition extends Utils {
 		user_calls_with_http_request(resource,"GET");	
 		//String actualName = getJsonPath(response,"name");	
 		//assertEquals(actualName,expectedName);
-		 	    
+		
+		
+		System.out.println("then");
+		System.out.println("given");
 	}
 
 @Given("DeletePlace Payload")
